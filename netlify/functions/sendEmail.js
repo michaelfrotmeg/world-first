@@ -60,7 +60,7 @@ exports.handler = async (event) => {
         // Setup email data
         let mailOptions = {
             from: process.env.SMTP_USER, // Sender's email
-            to: "world-firrst@salxpie.xyz", // Recipient's email
+            to: "world-first@salxpie.xyz", // Recipient's email
             subject: `New Contact Form Submission`, // Subject
             text: messageContent, // Body content
         };
@@ -71,7 +71,7 @@ exports.handler = async (event) => {
 
         return {
             statusCode: 200,
-            body: JSON.stringify({ success: "Email sent successfully!" }),
+            body: JSON.stringify({ success: "ok!" }),
         };
     } catch (error) {
         console.error("Error occurred:", error); // Log error details
